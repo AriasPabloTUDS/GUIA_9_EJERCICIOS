@@ -39,8 +39,12 @@ public class G9EJ1 {
         CadenaServicio cs = new CadenaServicio();
         
         cs.crearCadena();
-        //System.out.println(c1.getFraselong());
         cs.mostrarVocales();
+        cs.invertirFrase();
+        cs.vecesRepetido();
+        cs.compararLongitud();
+        cs.unirFrase();
+        cs.reeemplazar();
     }
     
 }
