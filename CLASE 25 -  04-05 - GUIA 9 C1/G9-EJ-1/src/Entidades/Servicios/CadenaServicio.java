@@ -60,7 +60,7 @@ Entrada: frase = "casa blanca". Salida: El carácter 'a' se repite 4 veces.
         char caract = leer.nextLine().charAt(0);
         int contador = 0;
         for (int i = 0; i < cd.getFraselong(); i++) {
-            if (cd.getFrase().charAt(i) == caract) {
+            if (cd.getFrase().toLowerCase().charAt(i) == caract) {
                 contador++;
             }
         }
@@ -109,8 +109,17 @@ la frase resultante.
     Método contiene(String letra), deberá comprobar si la frase contiene una letra que 
 ingresa el usuario y devuelve verdadero si la contiene y falso si no.
      */
-    public void contiene() {
-
+    public boolean contiene() {
+        System.out.println("Ingrese el caracter");
+        char caracter = leer.nextLine().charAt(0);
+        boolean retorno = false;
+        for (int i = 0; i < cd.getFraselong(); i++) {
+            if (cd.getFrase().charAt(i)==caracter) {
+                retorno = true;
+            }
+        }
+        return retorno;
+        
     }
 
     /**
