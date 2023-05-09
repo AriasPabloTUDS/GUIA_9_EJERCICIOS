@@ -26,8 +26,14 @@ public class ArregloServicio {
         }
     }
     
-     public void inicializarB(double [] arreglo){
-        Arrays.fill(arreglo, 99.8);
+     public void inicializarB(double [] arreglo, double[] arregloA){
+         for (int i = 0; i < arreglo.length; i++) {
+             if(i < 10 ){
+                 arreglo[i] = arregloA[i];
+             } else arreglo[i]=Math.random()*100;
+             
+         }
+        //Arrays.fill(arreglo, Math.random()*10);
     }
     
     public void ordenar(double[] arreglo){

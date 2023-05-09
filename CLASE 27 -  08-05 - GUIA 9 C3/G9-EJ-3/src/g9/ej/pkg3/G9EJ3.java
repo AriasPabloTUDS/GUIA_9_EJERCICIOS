@@ -27,7 +27,7 @@ public class G9EJ3 {
         as.inicializarA(arregloA);
         as.mostrarArreglo(arregloA);
         System.out.println("     Arreglo B     ");
-        as.inicializarB(arregloB);
+        as.inicializarB(arregloB,arregloA);
         as.mostrarArreglo(arregloB);
         System.out.println("     Método ordenar     ");
         as.ordenar(arregloA);
