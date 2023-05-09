@@ -33,7 +33,6 @@ public class ArregloServicio {
              } else arreglo[i]=Math.random()*100;
              
          }
-        //Arrays.fill(arreglo, Math.random()*10);
     }
     
     public void ordenar(double[] arreglo){
