@@ -25,6 +25,7 @@ public class G9EJ2 {
     pdns.devolverMayor();
     pdns.calcularPotencia();
     pdns.calcularRaiz();
+    
     }
     
 }
