@@ -12,12 +12,14 @@ import java.util.Scanner;
 public class PersonaServicio {
     
     Scanner leer = new Scanner(System.in);
-    private Persona pers = crearPersona();
+    private Persona pers;
+    
     
 //    Método crearPersona que pida al usuario Nombre y fecha de nacimiento de la persona a crear. Retornar el objeto Persona creado.
     public Persona crearPersona(){
         System.out.println("Ingrese el nombre: ");
-        String nombre = leer.next();
+        String nombre;
+        nombre = leer.next();
         System.out.println("Crear Fecha de nacimiento");
         System.out.print("Ingrese el día: ");
         int dia = leer.nextInt();
@@ -26,7 +28,8 @@ public class PersonaServicio {
         System.out.print("Ingrese año: ");
         int anio = leer.nextInt();
         Date fNac = new Date(anio-1900, mes-1, dia);
-        return new Persona(nombre, fNac);
+        return pers = new Persona(nombre, fNac);
+        
     }
 //    Método calcularEdad que calcule la edad del usuario utilizando el atributo de fecha de nacimiento y la fecha actual.
     

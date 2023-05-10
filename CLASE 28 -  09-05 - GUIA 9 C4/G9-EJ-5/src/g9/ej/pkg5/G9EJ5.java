@@ -22,7 +22,8 @@ public class G9EJ5 {
         PersonaServicio ps = new PersonaServicio();
         ps.crearPersona();
         ps.calcularEdad();
-        
+        System.out.println(ps.menorQue(49));
+        ps.mostrarPersona();
     }
     
 }
