@@ -16,7 +16,7 @@ package Entidades;
 public class Curso {
     private String nombreCurso;
     private int cantidadHorasPorDia;
-    private int cantidadHorasPorSemana;
+    private int cantidadDiasPorSemana;
     private String turno;
     private double precioPorHora;
     private String[] alumnos = new String[5];
@@ -24,10 +24,10 @@ public class Curso {
     public Curso() {
     }
 
-    public Curso(String nombreCurso, int cantidadHorasPorDia, int cantidadHorasPorSemana, String turno, double precioPorHora, String[] alumnos) {
+    public Curso(String nombreCurso, int cantidadHorasPorDia, int cantidadDiasPorSemana, String turno, double precioPorHora, String[] alumnos) {
         this.nombreCurso = nombreCurso;
         this.cantidadHorasPorDia = cantidadHorasPorDia;
-        this.cantidadHorasPorSemana = cantidadHorasPorSemana;
+        this.cantidadDiasPorSemana = cantidadDiasPorSemana;
         this.turno = turno;
         this.precioPorHora = precioPorHora;
         this.alumnos = alumnos;
@@ -49,12 +49,12 @@ public class Curso {
         this.cantidadHorasPorDia = cantidadHorasPorDia;
     }
 
-    public int getCantidadHorasPorSemana() {
-        return cantidadHorasPorSemana;
+    public int getCantidadDiasPorSemana() {
+        return cantidadDiasPorSemana;
     }
 
-    public void setCantidadHorasPorSemana(int cantidadHorasPorSemana) {
-        this.cantidadHorasPorSemana = cantidadHorasPorSemana;
+    public void setCantidadDiasPorSemana(int cantidadDiasPorSemana) {
+        this.cantidadDiasPorSemana = cantidadDiasPorSemana;
     }
 
     public String getTurno() {
@@ -83,7 +83,7 @@ public class Curso {
 
     @Override
     public String toString() {
-        return "Curso{" + "nombreCurso=" + nombreCurso + ", cantidadHorasPorDia=" + cantidadHorasPorDia + ", cantidadHorasPorSemana=" + cantidadHorasPorSemana + ", turno=" + turno + ", precioPorHora=" + precioPorHora + ", alumnos=" + alumnos + '}';
+        return "Curso{" + "nombreCurso=" + nombreCurso + ", cantidadHorasPorDia=" + cantidadHorasPorDia + ", cantidadDiasPorSemana=" + cantidadDiasPorSemana + ", turno=" + turno + ", precioPorHora=" + precioPorHora + ", alumnos=" + alumnos + '}';
     }
     
     

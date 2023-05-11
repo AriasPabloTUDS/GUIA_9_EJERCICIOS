@@ -40,7 +40,7 @@ asignan a sus respectivos atributos para llenar el objeto Curso. En este método
 para asignarle valor al atributo alumnos
     private String nombreCurso;
     private int cantidadHorasPorDia;
-    private int cantidadHorasPorSemana;
+    private int cantidadDiasPorSemana;
     private String turno;
     private double precioPorHora;
     private String[] alumnos = new String[5];
@@ -51,7 +51,7 @@ para asignarle valor al atributo alumnos
         String nombreCurso = leer.next();
         System.out.print("Ingrese la cantidad de horas por dia: ");
         int cantidadHorasPorDia = leer.nextInt();
-        System.out.print("Ingrese la cantidad de horas por semana: ");
+        System.out.print("Ingrese la cantidad de días por semana: ");
         int cantidadHorasPorSemana = leer.nextInt();
         System.out.print("Ingrese el turno: ");
         String turno = leer.next();
@@ -65,7 +65,7 @@ para asignarle valor al atributo alumnos
     public void mostrarCurso(){
         System.out.println("Curso "+crso.getNombreCurso());
         System.out.println("Cantidad de horas por dia: "+crso.getCantidadHorasPorDia());
-        System.out.println("Cantidad de horas por semana: "+crso.getCantidadHorasPorSemana());
+        System.out.println("Cantidad de dias por semana: "+crso.getCantidadDiasPorSemana());
         System.out.println("Turno: "+crso.getTurno());
         System.out.println("Precio por hora: "+crso.getPrecioPorHora());
         System.out.println("Alumnos: ");
@@ -83,7 +83,7 @@ la semana que se repite el encuentro.
     */
     public void calcularGananciaSemanal(){
         System.out.println("La ganancia semanal para el curso "+crso.getNombreCurso()+" es de $: "+
-                crso.getCantidadHorasPorSemana()*crso.getPrecioPorHora()*crso.getAlumnos().length);
+                crso.getCantidadHorasPorDia()*crso.getPrecioPorHora()*crso.getAlumnos().length);
     }
 
  
