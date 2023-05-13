@@ -15,6 +15,7 @@ la semana que se repite el encuentro.
  */
 package g9.ej.pkg6;
 
+import Entidades.Curso;
 import Entidades.Servicios.CursoServicio;
 
 /**

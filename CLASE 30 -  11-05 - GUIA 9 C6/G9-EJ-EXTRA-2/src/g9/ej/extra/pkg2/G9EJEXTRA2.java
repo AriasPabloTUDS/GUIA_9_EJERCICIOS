@@ -45,6 +45,9 @@ Mensaje: Lo sentimos, no hay más oportunidades
  */
 package g9.ej.extra.pkg2;
 
+import Entidades.Servicios.AhorcadoServicio;
+import Entidades.Servicios.AhorcadoServicioV2;
+
 /**
  *
  * @author Pablo
@@ -56,6 +59,17 @@ public class G9EJEXTRA2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        AhorcadoServicio juego = new AhorcadoServicio();
+        //juego.crearJuego();
+        //juego.longitud();
+        //juego.buscar();
+
+//Usando método dos que se ajusta al inunciado
+        AhorcadoServicioV2 juego2 = new AhorcadoServicioV2();
+        juego2.crearjuego();
+        
+
     }
-    
+
 }

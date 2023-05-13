@@ -83,7 +83,7 @@ la semana que se repite el encuentro.
     */
     public void calcularGananciaSemanal(){
         System.out.println("La ganancia semanal para el curso "+crso.getNombreCurso()+" es de $: "+
-                crso.getCantidadHorasPorDia()*crso.getPrecioPorHora()*crso.getAlumnos().length);
+                crso.getCantidadHorasPorDia()*crso.getPrecioPorHora()*crso.getAlumnos().length*crso.getCantidadDiasPorSemana());
     }
 
  
