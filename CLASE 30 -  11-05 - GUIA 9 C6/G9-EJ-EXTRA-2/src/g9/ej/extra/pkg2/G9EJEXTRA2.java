@@ -67,7 +67,7 @@ public class G9EJEXTRA2 {
 
 //Usando método dos que se ajusta al inunciado
         AhorcadoServicioV2 juego2 = new AhorcadoServicioV2();
-        juego2.crearjuego();
+        juego2.juego();
         
 
     }
