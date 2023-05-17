@@ -9,7 +9,6 @@ package Entidades;
  * @author Pablo
  */
 public class Ahorcado {
-    private String palabraMist;
     private String[] palabraMisteriosa;
     private int cantidadDeLetrasEncontradas;
     private int jugadasMaximas;
@@ -54,13 +53,7 @@ public class Ahorcado {
         this.jugadasMaximas = jugadasMaximas;
     }
 
-    public String getPalabraMist() {
-        return palabraMist;
-    }
 
-    public void setPalabraMist(String palabraMist) {
-        this.palabraMist = palabraMist;
-    }
 
     @Override
     public String toString() {
